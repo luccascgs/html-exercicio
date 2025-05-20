@@ -14,9 +14,55 @@
 
 body {
     margin: 0;
-    background-color: var(--black);
     font-family: "Poppins", sans-serif;
+    background-color: var(--black);
     color: var(--gray);
+    transition: all 0.2s;
+}
+
+body.light {
+    background-color: var(--white);
+    color: var(--offset);
+}
+body.light a{
+    color: var(--black);
+}
+body.light b{
+    color: var(--black);
+}
+body.light em {
+    color: var(--offset);
+}
+body.light span{
+    color: var(--gray);
+}
+body.light .quote{
+    color: var(--gray);
+    border-color: var(--gray);
+}
+body.light .hobbie ul {
+    color: var(--black);
+}
+
+button.tema {
+    all: unset;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 50px;
+    border: solid 2px;
+    overflow: hidden;
+}
+
+button.tema div{
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    transition: 0.2s;
+}
+body.light button.tema div{
+    transform: translateX(50%);
+    display: flex;
+    gap: 1rem;
 }
 
 h1,
